@@ -1,0 +1,126 @@
+(camel) PS D:\download\camel-master\camel-master> python D:\download\camel-master\camel-master\Myexamples\graph_test\test_graph.py
+--- Initializing Vector Database ---
+Loading existing FAISS storage for 'abstract' from Myexamples/vdb/camel_faiss_storage\abstract
+Loading existing FAISS storage for 'core_problem' from Myexamples/vdb/camel_faiss_storage\core_problem
+Loading existing FAISS storage for 'related_work' from Myexamples/vdb/camel_faiss_storage\related_work
+Loading existing FAISS storage for 'preliminary_innovation_analysis' from Myexamples/vdb/camel_faiss_storage\preliminary_innovation_analysis
+Loading existing FAISS storage for 'basic_problem' from Myexamples/vdb/camel_faiss_storage\basic_problem
+Loading existing FAISS storage for 'datasets' from Myexamples/vdb/camel_faiss_storage\datasets
+Loading existing FAISS storage for 'experimental_results' from Myexamples/vdb/camel_faiss_storage\experimental_results
+Loading existing FAISS storage for 'framework_summary' from Myexamples/vdb/camel_faiss_storage\framework_summary
+--- Vector Database Initialized ---
+
+--- Performing Vector Search ---
+Found in paper attribute 'abstract':
+  - Similarity Score: 0.5653
+  - Paper ID: 17403
+  - Content Snippet: Multi-task learning (MTL) has been widely applied in Natural Language Processing. A major task and its associated auxiliary tasks share the same encoder; hence, an MTL encoder can learn the sharing abstract information between the major and auxiliary tasks. Task-specific towers are then employed upon the sharing encoder to learn task-specific information. Previous works demonstrated that exchanging information between task-specific towers yielded extra gains. This is known as soft-parameter sharing MTL. In this paper, we propose a novel gating mechanism for the bridging of MTL towers. Our method is evaluated based on aspect-based sentiment analysis and sequential metaphor identification tasks. The experiments demonstrate that our method can yield better performance than the baselines on both tasks. Based on the same Transformer backbone, we compare our gating mechanism with other information transformation mechanisms, e.g., cross-stitch, attention and vanilla gating. The experiments show that our method also surpasses these baselines.
+
+Found in paper attribute 'core_problem':
+  - Similarity Score: 0.6772
+  - Paper ID: 17403
+  - Content Snippet: How can information exchange between task-specific towers in multi-task learning be optimized to selectively utilize useful information from auxiliary tasks while filtering out irrelevant or noisy information, thereby enhancing performance on major tasks?
+
+Found in paper attribute 'related_work':
+  - Similarity Score: 0.3536
+  - Paper ID: 26003
+  - Content Snippet: Traditional transfer learning theories and algorithms primarily operate under the independent and identically distributed (IID) assumption, where source and target samples are drawn from identical distributions. This assumption limits their applicability to tasks involving non-IID data, such as node classification or recommendation across different domains. While existing theoretical guarantees for transfer learning often rely on this IID premise, they demonstrate that generalization performance can be enhanced by leveraging knowledge from a source domain when the labeling spaces are shared, bounding the target error by source prediction error and domain discrepancy. This has motivated practical approaches focused on minimizing distribution discrepancy in latent feature spaces. 
+More recently, research has begun to analyze the transferability of graph neural networks (GNNs) using concepts like graphons or ego-graphs. These works primarily investigate whether GNNs can be transferred between two given graphs. However, they do not typically provide insights into *how* knowledge can be transferred across graphs in a hypothesis-dependent manner.
+In the realm of cross-network mining, which aims to extract informative patterns from multiple relevant networks or graphs, two main lines of solutions exist. One approach involves extracting signature subgraphs or consistent aggregation patterns from source and target graphs. However, these methods often lack a strong theoretical explanation for the observed knowledge transferability. Another common strategy involves pre-training GNNs on a large source graph to encode general graph structures, followed by fine-tuning on the target graph to extract task-specific information. This fine-tuning approach can be suboptimal, particularly for unsupervised tasks like cross-network node classification, where labeled target nodes are unavailable for effective adaptation. These limitations highlight a gap in theoretically grounded and practically effective methods for non-IID knowledge transfer across graphs.
+
+Found in paper attribute 'preliminary_innovation_analysis':
+  - Similarity Score: 0.5694
+  - Paper ID: 17403
+  - Content Snippet: Module 1: Gated Bridging Mechanism (GBM) - A novel gating mechanism designed to selectively filter information from auxiliary tasks before fusion, taking an extra gate compared to previous methods.
+Module 2: Weighted Sum Pooling (WSP) - A strategy for pooling features from different Transformer layers in a task-specific tower, where weights are learned parameters, allowing dynamic selection of strong features.
+Framework-level Innovation: The overall architectural design integrates a shared BERT encoder with task-specific Transformer towers, where GBM facilitates soft-parameter sharing between these towers, and WSP optimizes feature utilization from different layers within each tower. This combination aims for more effective and selective information transfer and aggregation in MTL.
+
+Found in paper attribute 'basic_problem':
+  - Similarity Score: 0.7465
+  - Paper ID: 17403
+  - Content Snippet: Effectively leveraging shared knowledge in multi-task learning is challenging, particularly in designing mechanisms that can intelligently transfer and integrate information between task-specific components. Specifically, how can a gating mechanism be designed to selectively filter and fuse information from auxiliary task towers into a main task tower, ensuring that only useful information is absorbed while irrelevant data is rejected? Furthermore, how can the features from multiple Transformer layers within a task-specific tower be optimally combined to ensure the best use of information for downstream tasks?
+
+Found in paper attribute 'datasets':
+  - Similarity Score: 0.3117
+  - Paper ID: 21011
+  - Content Snippet: Generalized Independent Set Problem (GISP):
+Data type and domain: Binary Linear Programs (BLPs) modeling the generalized independent set problem.
+Composition or source: Instances generated based on the work of Colombi, Mansini, and Savelsbergh (2017).
+Size or scale: 10 problem sets, each with 1000 training instances and 100 test instances. Instances have thousands to tens of thousands of variables and constraints.
+General application or purpose: Used to model various applications, including forest harvesting. Chosen for being simultaneously important for operations research and extremely difficult to solve.
+Fixed-Charge Multi-Commodity Network Flow Problem (FCMNF):
+Data type and domain: Binary Linear Programs (BLPs) modeling the fixed-charge multi-commodity network flow problem.
+Composition or source: Instances generated based on the work of Hewitt, Nemhauser, and Savelsbergh (2010).
+Size or scale: 1 problem set, with 1000 training instances and 100 test instances. Instances have thousands to tens of thousands of variables and constraints.    
+General application or purpose: Used to model supply chain planning. Chosen for being simultaneously important for operations research and extremely difficult to solve.
+
+Found in paper attribute 'experimental_results':
+  - Similarity Score: 0.3482
+  - Paper ID: 25858
+  - Content Snippet: (continued):
+*   Set Cover Dataset (Fig. 4): GCNN (FT) showed significant deterioration in performance (increased solving time) on older problems as training progressed on new tasks, demonstrating catastrophic forgetting. LIMIP, in contrast, was able to maintain learned patterns on past tasks, attributed to its knowledge distillation and weight consolidation mechanisms. For example, on SC0.05 (the first task), GCNN (FT) experienced a maximum increase in solving time, while LIMIP showed minimal increase.
+*   Independent Set Dataset (Fig. 5): Similar trends were observed, with LIMIP demonstrating superior performance in mitigating catastrophic forgetting compared to baselines.
+No Hindrance in Learning Future Tasks:
+*   LIMIP not only mitigated forgetting but also maintained superior performance on newly learned tasks compared to existing baselines. This indicates that the mechanisms to prevent forgetting did not hinder the model's ability to learn new competencies.
+Transferability to Low Data Regimes (Table 1):
+*   LIMIP's ability to transfer knowledge was tested on a new dataset, SC0.047, with only 300 branching samples (a very low data regime).
+*   A LIMIP model that underwent lifelong learning on `T = [SC0.05, SC0.075, SC0.1, SC0.125, SC0.15, SC0.2]` and was then fine-tuned on SC0.047 achieved significantly better performance (lower solving time and node count) compared to a GCNN model trained from scratch on the same 300 samples.
+    *   GCNN SC0.047 (trained from scratch): 16.01 sec, 607 nodes
+    *   LIMIP + (SC0.047) (lifelong learned + fine-tuned): 14.05 sec, 441 nodes
+*   This demonstrates LIMIP's effectiveness in transferring previously gained and unforgotten knowledge to unseen tasks with limited training data.
+Ablation Studies:
+*   GCN vs Bipartite GAT (Table 2): The Bipartite GAT encoding used in LIMIP showed a small but consistent improvement over the mean pool-based GCNN in terms of both running time and number of tree nodes.
+    *   For SC0.2: Bipartite GAT (7.9 ¡À 2.56 sec, 87.2 ¡À 15.31 nodes) vs GCNN (8.21 ¡À 2.45 sec, 91.2 ¡À 13.61 nodes).
+    *   For IS4,750: Bipartite GAT (22.25 ¡À 1.24 sec, 555.6 ¡À 6.02 nodes) vs GCNN (25.73 ¡À 1.32 sec, 672.2 ¡À 6.2 nodes).
+    *   For FC(40,50),(5,10): Bipartite GAT (33.94 ¡À 1.11 sec, 246.10 ¡À 4.02 nodes) vs GCNN (35.14 ¡À 1.30 sec, 248.20 ¡À 4.70 nodes).
+*   Impact of Regularizer and Buffer Size: The paper notes that these studies were conducted and their results are presented in Appendix A.11, indicating their importance in understanding LIMIP's performance.
+
+Found in paper attribute 'framework_summary':
+  - Similarity Score: 0.4688
+  - Paper ID: 17403
+  - Content Snippet: The proposed framework introduces a novel approach to multi-task learning (MTL) by enhancing information transformation between task-specific towers. The overall design motivation is to improve the selective utilization of information from auxiliary tasks to boost performance on major tasks, addressing the limitations of prior soft-parameter sharing mechanisms that fuse information less discriminately. The framework begins with a shared BERT encoder that processes the input sequence to generate shared hidden states. Upon this shared encoder, multiple Transformer layers are employed as task-specific towers, one for each subtask (e.g., three for ABSA: Aspect Extraction, Opinion Extraction, Sentiment Classification; two for SMI: SMI, Part-of-Speech tagging).
+The core innovation lies in the Gated Bridging Mechanism (GBM) and the Weighted Sum Pooling (WSP) strategy. Each task-specific tower consists of a stack of blocks, where each block (except the first, Block 0) incorporates a GBM layer followed by a Transformer layer. GBM's functional role is to intelligently filter and fuse information from neighbor task towers into the focused task tower. It achieves this through a multi-stage gating process: first, reset gates selectively control which parts of neighbor hidden states are considered; second, a non-linear projection aligns the vector spaces of neighbor hidden states with the focused task's space; and third, update gates determine the extent to which this filtered and projected neighbor information is fused with the focused task's own hidden states. This selective fusion ensures that only supportive information is absorbed, while irrelevant or noisy data is rejected. Following the stack of blocks, the WSP strategy is applied to the hidden states from all Transformer layers within each task-specific tower. WSP learns specific weights for each layer's output, allowing the model to dynamically emphasize features from the most informative layers for the final prediction, rather than using a fixed aggregation like average pooling. This dynamic weighting is crucial because different Transformer layers capture distinct linguistic features. The outputs from these pooled features are then passed through a linear projection and a softmax function for final task predictions. The entire MTL model is trained using a weighted sum of cross-entropy losses from all subtasks. This integrated design, with its emphasis on selective information flow via GBM and optimal feature aggregation via WSP, represents a significant advancement over previous soft-parameter sharing methods by providing a more nuanced and effective way to leverage shared knowledge in MTL.
+====================================================
+
+How can a gating mechanism be designed to selectively filter and fuse information from auxiliary task towers into a main task tower, ensuring that only useful information is absorbed while irrelevant data is rejected?
+====================================================
+nodes=[Node(id='gating mechanism', type='Mechanism', properties={'source': 'agent_created'}), Node(id='information', type='Concept', properties={'source': 'agent_created'}), Node(id='auxiliary task towers', type='Component', properties={'source': 'agent_created'}), Node(id='main task tower', type='Component', properties={'source': 'agent_created'})] relationships=[Relationship(subj=Node(id='gating mechanism', type='Mechanism', properties={'source': 'agent_created'}), obj=Node(id='information', type='Concept', properties={'source': 'agent_created'}), type='filters', timestamp=None, properties={'source': 'agent_created'}), Relationship(subj=Node(id='gating mechanism', type='Mechanism', properties={'source': 'agent_created'}), obj=Node(id='auxiliary task towers', type='Component', properties={'source': 'agent_created'}), type='fuses', timestamp=None, properties={'source': 'agent_created'}), Relationship(subj=Node(id='gating mechanism', type='Mechanism', properties={'source': 'agent_created'}), obj=Node(id='main task tower', type='Component', properties={'source': 'agent_created'}), type='absorbs', timestamp=None, properties={'source': 'agent_created'}), Relationship(subj=Node(id='gating mechanism', type='Mechanism', properties={'source': 'agent_created'}), obj=Node(id='information', type='Concept', properties={'source': 'agent_created'}), type='rejects', timestamp=None, properties={'source': 'agent_created'})] source=<unstructured.documents.elements.Text object at 0x00000271CE3893D0>
+====================================================
+['Node Bridging Towers of Multi-task Learning with a Gating Mechanism for Aspect-based Sentiment Analysis and Sequential Metaphor Identification (label: paper) has relationship HAS_RESEARCH_QUESTION with Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:383 (label: research_question_1)', 'Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:383 (label: research_question_1) has relationship HAS_RESEARCH_QUESTION with Node Bridging Towers of Multi-task Learning with a Gating Mechanism for Aspect-based Sentiment Analysis and Sequential Metaphor Identification (label: paper)', 'Node Bridging Towers of Multi-task Learning with a Gating Mechanism for Aspect-based Sentiment Analysis and Sequential Metaphor Identification (label: paper) has relationship HAS_RESEARCH_QUESTION with Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:743 (label: research_question_2)', 'Node Contextual Modulation for Relation-Level Metaphor Identification (label: paper) has relationship HAS_RESEARCH_QUESTION with Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:406 (label: research_question_1)', 'Node Contextual Modulation for Relation-Level Metaphor Identification (label: paper) has relationship HAS_RESEARCH_QUESTION with Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:766 (label: research_question_2)', 'Node Error-Aware Density Isomorphism Reconstruction for Unsupervised Cross-Domain Crowd Counting (label: paper) has relationship HAS_RESEARCH_QUESTION with Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:362 (label: research_question_1)', 'Node Error-Aware Density Isomorphism Reconstruction for Unsupervised Cross-Domain Crowd Counting (label: paper) has relationship HAS_RESEARCH_QUESTION with Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:722 (label: research_question_2)', 'Node Cross-Domain Grouping and Alignment for Domain Adaptive Semantic Segmentation (label: paper) has relationship HAS_RESEARCH_QUESTION with Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:363 (label: research_question_1)', 'Node Cross-Domain Grouping and Alignment for Domain Adaptive Semantic Segmentation (label: paper) has relationship HAS_RESEARCH_QUESTION with Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:723 (label: research_question_2)', 'Node Cross-Domain Grouping and Alignment for Domain Adaptive Semantic Segmentation (label: paper) has relationship HAS_RESEARCH_QUESTION with Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:1083 (label: research_question_3)', 'Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:383 (label: research_question_1) has relationship HAS_RESEARCH_QUESTION with Node Bridging Towers of Multi-task Learning with a Gating Mechanism for Aspect-based Sentiment Analysis and Sequential Metaphor Identification (label: paper)', 'Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:383 (label: research_question_1) has relationship HAS_SOLUTION with Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:1823 (label: solution_1)', 'Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:1823 (label: solution_1) has relationship HAS_SOLUTION with Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:383 (label: research_question_1)', 'Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:383 (label: research_question_1) has relationship HAS_RESEARCH_QUESTION with Node Bridging Towers of Multi-task Learning with a Gating Mechanism for Aspect-based Sentiment Analysis and Sequential Metaphor Identification (label: paper)', 'Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:383 (label: research_question_1) has relationship HAS_SOLUTION with Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:1823 (label: solution_1)', 'Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:1823 (label: solution_1) has relationship HAS_SOLUTION with Node 4:c0f68a09-2957-4c03-a137-27cd4899f5f4:383 (label: research_question_1)']
+====================================================
+### Answer
+
+A gating mechanism for selectively filtering and fusing information from auxiliary task towers into a main task tower can be designed using the Gated Bridging Mechanism (GBM) proposed in the paper "Bridging Towers of Multi-task Learning with a Gating Mechanism for Aspect-based Sentiment Analysis and Sequential Metaphor Identification." This mechanism enables selective information transfer by employing a multi-stage process involving reset gates, non-linear projections, and update gates. The GBM ensures that only useful information is absorbed while irrelevant data is rejected, thereby enhancing performance on the main task.
+
+---
+
+### Expert Elaboration
+
+The GBM operates as follows:
+
+- **Reset Gates**: These gates determine which parts of the hidden states from neighboring task towers are considered relevant. By selectively activating or deactivating certain features, the reset gate helps filter out noise or irrelevant information before it is processed further.
+
+- **Non-Linear Projection**: Once the relevant features are identified, they are projected into the same vector space as the focused task's hidden states. This alignment ensures that the information from different tasks can be meaningfully combined, even if they originate from different domains or have different feature distributions.
+ignment ensures that the information from different tasks can be meaningfully combined, even if they originate from different domains or have different feature distributions.
+stributions.
+
+
+- **Update Gates**: These gates control how much of the filtered and projected neighbor information is fused with the focused task's own hidden states. This step ensures that only supportive information is incorporated, maintaining the integrity of the main task's learning process.
+
+This three-step process allows the model to dynamically adapt to the relevance of information from auxiliary tasks, making the fusion process more intelligent and effective compared to traditional methods like cross-stitch or vanilla gating.
+
+Additionally, the Weighted Sum Pooling (WSP) strategy complements the GBM by allowing dynamic selection of informative features from multiple Transformer layers within each task-specific tower. This ensures that the model can effectively leverage the strengths of different layers, further improving the quality of the fused information.
+ithin each task-specific tower. This ensures that the model can effectively leverage the strengths of different layers, further improving the quality of the fused information.
+ information.
+
+
+---
+---
+
+### Key Insights
+
+- The Gated Bridging Mechanism (GBM) provides a structured approach to selectively filter and fuse information between task-specific towers in multi-task learning.
+- Reset gates, non-linear projections, and update gates work together to ensure that only useful information is absorbed, while irrelevant data is rejected.      
+on the main task.
+- This design represents an advancement over previous soft-parameter sharing methods by enabling more nuanced and effective information transfer in multi-task learning scenarios.
+finished!

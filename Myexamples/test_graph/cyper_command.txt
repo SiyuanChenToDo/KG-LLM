@@ -1,0 +1,45 @@
+MATCH (p:paper), (rq:research_question_1)
+WHERE p.file_id = rq.file_id
+MERGE (p)-[:HAS_RESEARCH_QUESTION]->(rq);
+
+MATCH (p:paper), (rq:research_question_2)
+WHERE p.file_id = rq.file_id
+MERGE (p)-[:HAS_RESEARCH_QUESTION]->(rq);
+
+MATCH (p:paper), (rq:research_question_3)
+WHERE p.file_id = rq.file_id
+MERGE (p)-[:HAS_RESEARCH_QUESTION]->(rq);
+
+MATCH (p:paper), (rq:research_question_4)
+WHERE p.file_id = rq.file_id
+MERGE (p)-[:HAS_RESEARCH_QUESTION]->(rq);
+
+MATCH (n)
+WHERE keys(properties(n)) = ['file_id']
+return n;
+
+MATCH (n)
+WHERE keys(properties(n)) = ['file_id']
+DETACH DELETE n;
+
+MATCH (n) RETURN n ;
+
+
+MATCH (rq:research_question_1), (s:solution_1)
+WHERE rq.file_id = s.file_id
+MERGE (rq)-[:HAS_SOLUTION]->(s);
+
+MATCH (rq:research_question_2), (s:solution_2)
+WHERE rq.file_id = s.file_id
+MERGE (rq)-[:HAS_SOLUTION]->(s);
+
+MATCH (rq:research_question_3), (s:solution_3)
+WHERE rq.file_id = s.file_id
+MERGE (rq)-[:HAS_SOLUTION]->(s);
+
+MATCH (rq:research_question_4), (s:solution_4)
+WHERE rq.file_id = s.file_id
+MERGE (rq)-[:HAS_SOLUTION]->(s);
+
+MATCH path = (n)-[*1..]->(m)
+RETURN path;

@@ -1,0 +1,203 @@
+2025-09-06 20:48:14,576 - lightrag - INFO - Created new empty graph
+2025-09-06 20:48:14,576 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-09-06 20:48:14,577 - lightrag - INFO - Process 4664 KV load full_docs with 0 records
+2025-09-06 20:48:14,577 - lightrag - INFO - Process 4664 KV load text_chunks with 0 records
+2025-09-06 20:48:14,577 - lightrag - INFO - Process 4664 KV load llm_response_cache with 0 records
+2025-09-06 20:48:14,577 - lightrag - INFO - Process 4664 doc status load doc_status with 0 records
+2025-09-06 20:48:14,581 - lightrag - INFO - Storage Initialization completed!
+2025-09-06 20:48:14,582 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-09-06 20:48:22,136 - lightrag - INFO - Writing graph with 61 nodes, 52 edges
+2025-09-06 20:48:22,159 - lightrag - INFO - In memory DB persist to disk
+2025-09-06 20:48:22,161 - lightrag - INFO - 成功加载向量缓存，包含 61 个向量
+2025-09-06 20:48:22,161 - lightrag - INFO - 跨论文关联引擎初始化完成，缓存目录: ./cache
+2025-09-06 20:48:22,161 - lightrag - INFO - 开始查找跨论文关联...
+2025-09-06 20:48:22,161 - lightrag - INFO - 找到 61 个节点，分布在 9 篇论文中
+2025-09-06 20:48:22,162 - lightrag - INFO - 空entity_name数量: 0
+2025-09-06 20:48:22,162 - lightrag - INFO - 前20个节点的详细信息:
+2025-09-06 20:48:22,162 - lightrag - INFO -    0. paper           | entity_name: Attention-based_Multi-Level_Fusion_Network_for_Lig... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'abstract', 'title', 'authors', 'year', 'conference', 'venue', 'citationCount', 'core_problem', 'related_work', 'preliminary_innovation_analysis', 'basic_problem', 'datasets', 'experimental_results', 'evaluation_metrics', 'framework_summary']
+2025-09-06 20:48:22,162 - lightrag - INFO -    1. research_question | entity_name: Attention-based_Multi-Level_Fusion_Network_for_Lig... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'research_question', 'simplified_research_question']
+2025-09-06 20:48:22,162 - lightrag - INFO -    2. research_question | entity_name: Attention-based_Multi-Level_Fusion_Network_for_Lig... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'research_question', 'simplified_research_question']
+2025-09-06 20:48:22,162 - lightrag - INFO -    3. research_question | entity_name: Attention-based_Multi-Level_Fusion_Network_for_Lig... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'research_question', 'simplified_research_question']
+2025-09-06 20:48:22,162 - lightrag - INFO -    4. solution        | entity_name: Attention-based_Multi-Level_Fusion_Network_for_Lig... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'solution', 'simplified_solution']
+2025-09-06 20:48:22,162 - lightrag - INFO -    5. solution        | entity_name: Attention-based_Multi-Level_Fusion_Network_for_Lig... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'solution', 'simplified_solution']
+2025-09-06 20:48:22,162 - lightrag - INFO -    6. solution        | entity_name: Attention-based_Multi-Level_Fusion_Network_for_Lig... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'solution', 'simplified_solution']
+2025-09-06 20:48:22,162 - lightrag - INFO -    7. paper           | entity_name: Cross-Domain_Grouping_and_Alignment_for_Domain_Ada... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'abstract', 'title', 'authors', 'year', 'conference', 'venue', 'citationCount', 'core_problem', 'related_work', 'preliminary_innovation_analysis', 'basic_problem', 'datasets', 'experimental_results', 'evaluation_metrics', 'framework_summary']
+2025-09-06 20:48:22,162 - lightrag - INFO -    8. research_question | entity_name: Cross-Domain_Grouping_and_Alignment_for_Domain_Ada... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'research_question', 'simplified_research_question']
+2025-09-06 20:48:22,163 - lightrag - INFO -    9. research_question | entity_name: Cross-Domain_Grouping_and_Alignment_for_Domain_Ada... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'research_question', 'simplified_research_question']
+2025-09-06 20:48:22,163 - lightrag - INFO -   10. research_question | entity_name: Cross-Domain_Grouping_and_Alignment_for_Domain_Ada... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'research_question', 'simplified_research_question']
+2025-09-06 20:48:22,163 - lightrag - INFO -   11. solution        | entity_name: Cross-Domain_Grouping_and_Alignment_for_Domain_Ada... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'solution', 'simplified_solution']
+2025-09-06 20:48:22,163 - lightrag - INFO -   12. solution        | entity_name: Cross-Domain_Grouping_and_Alignment_for_Domain_Ada... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'solution', 'simplified_solution']
+2025-09-06 20:48:22,163 - lightrag - INFO -   13. solution        | entity_name: Cross-Domain_Grouping_and_Alignment_for_Domain_Ada... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'solution', 'simplified_solution']
+2025-09-06 20:48:22,163 - lightrag - INFO -   14. paper           | entity_name: Dual_Distribution_Alignment_Network_for_Generaliza... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'abstract', 'title', 'authors', 'year', 'conference', 'venue', 'citationCount', 'core_problem', 'related_work', 'preliminary_innovation_analysis', 'basic_problem', 'datasets', 'experimental_results', 'evaluation_metrics', 'framework_summary']
+2025-09-06 20:48:22,163 - lightrag - INFO -   15. research_question | entity_name: Dual_Distribution_Alignment_Network_for_Generaliza... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'research_question', 'simplified_research_question']
+2025-09-06 20:48:22,163 - lightrag - INFO -   16. research_question | entity_name: Dual_Distribution_Alignment_Network_for_Generaliza... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'research_question', 'simplified_research_question']
+2025-09-06 20:48:22,163 - lightrag - INFO -   17. solution        | entity_name: Dual_Distribution_Alignment_Network_for_Generaliza... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'solution', 'simplified_solution']
+2025-09-06 20:48:22,163 - lightrag - INFO -   18. solution        | entity_name: Dual_Distribution_Alignment_Network_for_Generaliza... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'solution', 'simplified_solution']
+2025-09-06 20:48:22,163 - lightrag - INFO -   19. paper           | entity_name: Error-Aware_Density_Isomorphism_Reconstruction_for... | keys: ['entity_id', 'entity_type', 'description', 'source_id', 'file_path', 'created_at', 'entity_name', 'abstract', 'title', 'authors', 'year', 'conference', 'venue', 'citationCount', 'core_problem', 'related_work', 'preliminary_innovation_analysis', 'basic_problem', 'datasets', 'experimental_results', 'evaluation_metrics', 'framework_summary']
+2025-09-06 20:48:22,164 - lightrag - INFO - 前10个论文组的信息:
+2025-09-06 20:48:22,164 - lightrag - INFO -    1. Attention-based_Multi-Level_Fusion_Network_for_Lig... (7 个节点: {'research_question': 3, 'solution': 3, 'paper': 1})
+2025-09-06 20:48:22,164 - lightrag - INFO -    2. Cross-Domain_Grouping_and_Alignment_for_Domain_Ada... (7 个节点: {'research_question': 3, 'solution': 3, 'paper': 1})
+2025-09-06 20:48:22,164 - lightrag - INFO -    3. Dual_Distribution_Alignment_Network_for_Generaliza... (5 个节点: {'research_question': 2, 'solution': 2, 'paper': 1})
+2025-09-06 20:48:22,164 - lightrag - INFO -    4. Error-Aware_Density_Isomorphism_Reconstruction_for... (5 个节点: {'research_question': 2, 'solution': 2, 'paper': 1})
+2025-09-06 20:48:22,164 - lightrag - INFO -    5. Exploiting_Diverse_Characteristics_and_Adversarial... (9 个节点: {'research_question': 4, 'solution': 4, 'paper': 1})
+2025-09-06 20:48:22,164 - lightrag - INFO -    6. Gradient_Regularized_Contrastive_Learning_for_Cont... (7 个节点: {'research_question': 3, 'solution': 3, 'paper': 1})
+2025-09-06 20:48:22,164 - lightrag - INFO -    7. Mind-the-Gap_Unsupervised_Domain_Adaptation_for_Te... (7 个节点: {'research_question': 3, 'solution': 3, 'paper': 1})
+2025-09-06 20:48:22,164 - lightrag - INFO -    8. Self-Domain_Adaptation_for_Face_Anti-Spoofing... (7 个节点: {'research_question': 3, 'solution': 3, 'paper': 1})
+2025-09-06 20:48:22,164 - lightrag - INFO -    9. Time_Series_Domain_Adaptation_via_Sparse_Associati... (7 个节点: {'research_question': 3, 'solution': 3, 'paper': 1})
+2025-09-06 20:48:22,164 - lightrag - INFO - 预计算语义向量...
+2025-09-06 20:48:22,166 - lightrag - INFO - 向量计算完成: 成功 61 个，失败 0 个
+2025-09-06 20:48:22,167 - lightrag - INFO - 向量缓存已保存，包含 61 个向量
+2025-09-06 20:48:22,167 - lightrag - INFO - 预处理节点类型...
+2025-09-06 20:48:22,167 - lightrag - INFO - 找到 26 个solution节点，9 个paper节点
+2025-09-06 20:48:22,167 - lightrag - INFO - 计算跨论文相似度...
+2025-09-06 20:48:22,167 - lightrag - INFO - 总计算量：234 次比较（优化后）
+2025-09-06 20:48:22,183 - lightrag - INFO - Solution->Paper相似度 2: 0.4338
+2025-09-06 20:48:22,183 - lightrag - INFO -   Solution: Attention-based_Multi-Level_Fusion_Netwo...
+2025-09-06 20:48:22,183 - lightrag - INFO -   Paper: Cross-Domain_Grouping_and_Alignment_for_...
+2025-09-06 20:48:22,198 - lightrag - INFO - Solution->Paper相似度 3: 0.4496
+2025-09-06 20:48:22,198 - lightrag - INFO -   Solution: Attention-based_Multi-Level_Fusion_Netwo...
+2025-09-06 20:48:22,199 - lightrag - INFO -   Paper: Dual_Distribution_Alignment_Network_for_...
+2025-09-06 20:48:22,211 - lightrag - INFO - Solution->Paper相似度 4: 0.4383
+2025-09-06 20:48:22,211 - lightrag - INFO -   Solution: Attention-based_Multi-Level_Fusion_Netwo...
+2025-09-06 20:48:22,211 - lightrag - INFO -   Paper: Error-Aware_Density_Isomorphism_Reconstr...
+2025-09-06 20:48:22,223 - lightrag - INFO - Solution->Paper相似度 5: 0.4668
+2025-09-06 20:48:22,223 - lightrag - INFO -   Solution: Attention-based_Multi-Level_Fusion_Netwo...
+2025-09-06 20:48:22,223 - lightrag - INFO -   Paper: Exploiting_Diverse_Characteristics_and_A...
+2025-09-06 20:48:22,234 - lightrag - INFO - Solution->Paper相似度 6: 0.4542
+2025-09-06 20:48:22,234 - lightrag - INFO -   Solution: Attention-based_Multi-Level_Fusion_Netwo...
+2025-09-06 20:48:22,234 - lightrag - INFO -   Paper: Gradient_Regularized_Contrastive_Learnin...
+2025-09-06 20:48:22,246 - lightrag - INFO - Solution->Paper相似度 7: 0.4547
+2025-09-06 20:48:22,246 - lightrag - INFO -   Solution: Attention-based_Multi-Level_Fusion_Netwo...
+2025-09-06 20:48:22,246 - lightrag - INFO -   Paper: Mind-the-Gap_Unsupervised_Domain_Adaptat...
+2025-09-06 20:48:22,259 - lightrag - INFO - Solution->Paper相似度 8: 0.4607
+2025-09-06 20:48:22,259 - lightrag - INFO -   Solution: Attention-based_Multi-Level_Fusion_Netwo...
+2025-09-06 20:48:22,259 - lightrag - INFO -   Paper: Self-Domain_Adaptation_for_Face_Anti-Spo...
+2025-09-06 20:48:22,270 - lightrag - INFO - Solution->Paper相似度 9: 0.4686
+2025-09-06 20:48:22,270 - lightrag - INFO -   Solution: Attention-based_Multi-Level_Fusion_Netwo...
+2025-09-06 20:48:22,270 - lightrag - INFO -   Paper: Time_Series_Domain_Adaptation_via_Sparse...
+2025-09-06 20:48:22,741 - lightrag - INFO - ✅ 发现Solution->Paper关联 #1: 相似度 0.502
+2025-09-06 20:48:22,826 - lightrag - INFO - ✅ 发现Solution->Paper关联 #2: 相似度 0.518
+2025-09-06 20:48:22,837 - lightrag - INFO - ✅ 发现Solution->Paper关联 #3: 相似度 0.501
+2025-09-06 20:48:22,863 - lightrag - INFO - ✅ 发现Solution->Paper关联 #4: 相似度 0.512
+2025-09-06 20:48:23,554 - lightrag - INFO - ✅ 发现Solution->Paper关联 #5: 相似度 0.503
+2025-09-06 20:48:23,597 - lightrag - INFO - ✅ 发现Solution->Paper关联 #6: 相似度 0.502
+2025-09-06 20:48:24,177 - lightrag - INFO - ✅ 发现Solution->Paper关联 #7: 相似度 0.500
+2025-09-06 20:48:24,193 - lightrag - INFO - ✅ 发现Solution->Paper关联 #8: 相似度 0.505
+2025-09-06 20:48:24,221 - lightrag - INFO - ✅ 发现Solution->Paper关联 #9: 相似度 0.527
+2025-09-06 20:48:24,233 - lightrag - INFO - ✅ 发现Solution->Paper关联 #10: 相似度 0.515
+2025-09-06 20:48:24,342 - lightrag - INFO - ✅ 发现Solution->Paper关联 #15: 相似度 0.531
+2025-09-06 20:48:24,553 - lightrag - INFO - ✅ 发现Solution->Paper关联 #20: 相似度 0.507
+2025-09-06 20:48:24,893 - lightrag - INFO - 🎉 跨论文关联发现完成！总共发现 20 个跨论文关联
+2025-09-06 20:48:24,894 - lightrag - INFO - 📊 相似度统计: 最高 0.531, 最低 0.500, 平均 0.513
+2025-09-06 20:48:24,894 - lightrag - INFO - 开始将 20 条跨论文边添加到图中...
+2025-09-06 20:48:24,894 - lightrag - INFO - 处理第 1 批，共 5 条边...
+2025-09-06 20:48:24,895 - lightrag - INFO - 第 1 批完成，添加 5 条边
+2025-09-06 20:48:24,996 - lightrag - INFO - 处理第 2 批，共 5 条边...
+2025-09-06 20:48:24,996 - lightrag - INFO - 第 2 批完成，添加 5 条边
+2025-09-06 20:48:25,097 - lightrag - INFO - 处理第 3 批，共 5 条边...
+2025-09-06 20:48:25,097 - lightrag - INFO - 第 3 批完成，添加 5 条边
+2025-09-06 20:48:25,198 - lightrag - INFO - 处理第 4 批，共 5 条边...
+2025-09-06 20:48:25,198 - lightrag - INFO - 第 4 批完成，添加 5 条边
+2025-09-06 20:48:25,198 - lightrag - INFO - 成功添加 20 条跨论文边到图中
+2025-09-06 20:48:25,198 - lightrag - INFO - 跨论文边持久化任务已启动（异步）
+2025-09-06 20:48:25,199 - lightrag - INFO - 性能优化：跳过向量库写入步骤，避免系统阻塞
+2025-09-06 20:48:25,208 - lightrag - INFO - Writing graph with 61 nodes, 72 edges
+2025-09-06 20:48:25,668 - lightrag - INFO - Storage Finalization completed!
+2025-09-06 20:50:35,839 - lightrag - INFO - Created new empty graph
+2025-09-06 20:50:35,840 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-09-06 20:50:35,840 - lightrag - INFO - Process 5813 KV load full_docs with 0 records
+2025-09-06 20:50:35,840 - lightrag - INFO - Process 5813 KV load text_chunks with 0 records
+2025-09-06 20:50:35,841 - lightrag - INFO - Process 5813 KV load llm_response_cache with 0 records
+2025-09-06 20:50:35,841 - lightrag - INFO - Process 5813 doc status load doc_status with 0 records
+2025-09-06 20:50:35,845 - lightrag - INFO - Storage Initialization completed!
+2025-09-06 20:50:35,845 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-09-06 20:50:36,430 - lightrag - ERROR - Error in ainsert_custom_kg: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 1, the array at index 0 has size 4096 and the array at index 1 has size 1024
+2025-09-06 20:50:36,431 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-09-06 20:50:36,433 - lightrag - INFO - In memory DB persist to disk
+2025-09-06 20:50:36,804 - lightrag - INFO - Storage Finalization completed!
+2025-09-06 20:51:37,201 - lightrag - INFO - Created new empty graph
+2025-09-06 20:51:37,201 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-09-06 20:51:37,202 - lightrag - INFO - Process 6156 KV load full_docs with 0 records
+2025-09-06 20:51:37,202 - lightrag - INFO - Process 6156 KV load text_chunks with 0 records
+2025-09-06 20:51:37,202 - lightrag - INFO - Process 6156 KV load llm_response_cache with 0 records
+2025-09-06 20:51:37,202 - lightrag - INFO - Process 6156 doc status load doc_status with 0 records
+2025-09-06 20:51:37,206 - lightrag - INFO - Storage Initialization completed!
+2025-09-06 20:51:37,207 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-09-06 20:51:41,946 - lightrag - INFO - Writing graph with 61 nodes, 52 edges
+2025-09-06 20:51:41,969 - lightrag - INFO - In memory DB persist to disk
+2025-09-06 20:51:42,410 - lightrag - INFO - Storage Finalization completed!
+2025-09-06 21:08:16,244 - lightrag - INFO - Created new empty graph
+2025-09-06 21:08:16,245 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-09-06 21:08:16,245 - lightrag - INFO - Process 10266 KV load full_docs with 0 records
+2025-09-06 21:08:16,245 - lightrag - INFO - Process 10266 KV load text_chunks with 0 records
+2025-09-06 21:08:16,245 - lightrag - INFO - Process 10266 KV load llm_response_cache with 0 records
+2025-09-06 21:08:16,246 - lightrag - INFO - Process 10266 doc status load doc_status with 0 records
+2025-09-06 21:08:16,250 - lightrag - INFO - Storage Initialization completed!
+2025-09-06 21:08:16,250 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-09-06 21:08:23,880 - lightrag - INFO - Writing graph with 61 nodes, 52 edges
+2025-09-06 21:08:23,903 - lightrag - INFO - In memory DB persist to disk
+2025-09-06 21:08:24,338 - lightrag - INFO - Storage Finalization completed!
+2025-09-06 21:09:15,542 - lightrag - INFO - Created new empty graph
+2025-09-06 21:09:15,542 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-09-06 21:09:15,543 - lightrag - INFO - Process 11139 KV load full_docs with 0 records
+2025-09-06 21:09:15,543 - lightrag - INFO - Process 11139 KV load text_chunks with 0 records
+2025-09-06 21:09:15,543 - lightrag - INFO - Process 11139 KV load llm_response_cache with 0 records
+2025-09-06 21:09:15,543 - lightrag - INFO - Process 11139 doc status load doc_status with 0 records
+2025-09-06 21:09:15,547 - lightrag - INFO - Storage Initialization completed!
+2025-09-06 21:09:15,548 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-09-06 21:09:20,258 - lightrag - INFO - Writing graph with 61 nodes, 52 edges
+2025-09-06 21:09:20,278 - lightrag - INFO - In memory DB persist to disk
+2025-09-06 21:09:20,720 - lightrag - INFO - Storage Finalization completed!
+2025-09-06 21:16:45,177 - lightrag - INFO - Created new empty graph
+2025-09-06 21:16:45,178 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-09-06 21:16:45,178 - lightrag - INFO - Process 13319 KV load full_docs with 0 records
+2025-09-06 21:16:45,178 - lightrag - INFO - Process 13319 KV load text_chunks with 0 records
+2025-09-06 21:16:45,178 - lightrag - INFO - Process 13319 KV load llm_response_cache with 0 records
+2025-09-06 21:16:45,178 - lightrag - INFO - Process 13319 doc status load doc_status with 0 records
+2025-09-06 21:16:45,180 - lightrag - ERROR - Error in ainsert_custom_kg: name 'chunk_to_source_map' is not defined
+2025-09-06 21:16:45,181 - lightrag - INFO - Storage Initialization completed!
+2025-09-06 21:16:45,493 - lightrag - INFO - Storage Finalization completed!
+2025-09-06 21:20:01,874 - lightrag - INFO - Created new empty graph
+2025-09-06 21:20:01,874 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-09-06 21:20:01,875 - lightrag - INFO - Process 14104 KV load full_docs with 0 records
+2025-09-06 21:20:01,875 - lightrag - INFO - Process 14104 KV load text_chunks with 0 records
+2025-09-06 21:20:01,875 - lightrag - INFO - Process 14104 KV load llm_response_cache with 0 records
+2025-09-06 21:20:01,875 - lightrag - INFO - Process 14104 doc status load doc_status with 0 records
+2025-09-06 21:20:01,877 - lightrag - ERROR - Error in ainsert_custom_kg: name 'chunk_to_source_map' is not defined
+2025-09-06 21:20:01,878 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-09-06 21:20:01,879 - lightrag - INFO - Storage Initialization completed!
+2025-09-06 21:20:01,879 - lightrag - INFO - In memory DB persist to disk
+2025-09-06 21:20:02,313 - lightrag - INFO - Storage Finalization completed!
+2025-09-06 21:22:03,293 - lightrag - INFO - Created new empty graph
+2025-09-06 21:22:03,294 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-09-06 21:22:03,295 - lightrag - INFO - Process 14605 KV load full_docs with 0 records
+2025-09-06 21:22:03,295 - lightrag - INFO - Process 14605 KV load text_chunks with 0 records
+2025-09-06 21:22:03,295 - lightrag - INFO - Process 14605 KV load llm_response_cache with 0 records
+2025-09-06 21:22:03,295 - lightrag - INFO - Process 14605 doc status load doc_status with 0 records
+2025-09-06 21:22:03,299 - lightrag - INFO - Storage Initialization completed!
+2025-09-06 21:22:03,299 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-09-06 21:22:11,129 - lightrag - INFO - Writing graph with 61 nodes, 52 edges
+2025-09-06 21:22:11,151 - lightrag - INFO - In memory DB persist to disk
+2025-09-06 21:22:11,591 - lightrag - INFO - Storage Finalization completed!
+2025-09-06 21:23:23,806 - lightrag - INFO - Created new empty graph
+2025-09-06 21:23:23,806 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-09-06 21:23:23,807 - lightrag - INFO - Process 15514 KV load full_docs with 0 records
+2025-09-06 21:23:23,807 - lightrag - INFO - Process 15514 KV load text_chunks with 0 records
+2025-09-06 21:23:23,807 - lightrag - INFO - Process 15514 KV load llm_response_cache with 0 records
+2025-09-06 21:23:23,807 - lightrag - INFO - Process 15514 doc status load doc_status with 0 records
+2025-09-06 21:23:23,811 - lightrag - INFO - Storage Initialization completed!
+2025-09-06 21:23:23,812 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-09-06 21:23:28,541 - lightrag - INFO - Writing graph with 61 nodes, 52 edges
+2025-09-06 21:23:28,566 - lightrag - INFO - In memory DB persist to disk
+2025-09-06 21:23:29,007 - lightrag - INFO - Storage Finalization completed!
+2025-09-08 21:34:50,787 - lightrag - INFO - Created new empty graph
+2025-09-08 21:34:50,788 - lightrag - WARNING - Rerank is enabled but no rerank_model_func provided. Reranking will be skipped.
+2025-09-08 21:34:50,789 - lightrag - INFO - Process 9124 KV load full_docs with 0 records
+2025-09-08 21:34:50,789 - lightrag - INFO - Process 9124 KV load text_chunks with 0 records
+2025-09-08 21:34:50,789 - lightrag - INFO - Process 9124 KV load llm_response_cache with 0 records
+2025-09-08 21:34:50,789 - lightrag - INFO - Process 9124 doc status load doc_status with 0 records
+2025-09-08 21:34:50,885 - lightrag - INFO - Storage Initialization completed!
+2025-09-08 21:34:50,885 - lightrag - INFO - limit_async: 8 new workers initialized
+2025-09-08 21:37:25,873 - lightrag - INFO - Writing graph with 2286 nodes, 1926 edges
+2025-09-08 21:37:26,162 - lightrag - INFO - In memory DB persist to disk
+2025-09-08 21:37:27,265 - lightrag - INFO - Storage Finalization completed!
