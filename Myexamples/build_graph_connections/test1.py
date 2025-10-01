@@ -11,15 +11,15 @@ from camel.embeddings import OpenAICompatibleEmbedding
 # 1. 环境与数据库配置 (Environment and Database Configuration)
 # =================================================================================
 # --- 请确保您的环境变量已正确设置 ---
-os.environ["OPENAI_COMPATIBILITY_API_KEY"] = "sk-c1a6b588f7d543adb0412c5bc61bdd7b"
-os.environ["OPENAI_COMPATIBILITY_API_BASE_URL"] = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+os.environ["OPENAI_COMPATIBILITY_API_KEY"] = ""
+os.environ["OPENAI_COMPATIBILITY_API_BASE_URL"] = ""
 
 # --- Neo4j 数据库连接信息 ---
 # 注意：密码已替换为占位符，请使用您自己的真实密码。
 n4j = Neo4jGraph(
-    url="neo4j+s://b3980610.databases.neo4j.io",
+    url="",
     username="neo4j",
-    password="ta_T6_9gzxTfrTiWjRuUhO7Lm6fBbQG8TwxnSqHpoqk",
+    password="",
 )
 
 # --- 嵌入模型初始化 ---
