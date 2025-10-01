@@ -34,9 +34,9 @@ os.environ["QWEN_API_BASE_URL"] = os.environ["OPENAI_COMPATIBILITY_API_BASE_URL"
 
 # Set Neo4j instance
 n4j = Neo4jGraph(
-    url="neo4j+s://b3980610.databases.neo4j.io",
+    url="",
     username="neo4j",
-    password="ta_T6_9gzxTfrTiWjRuUhO7Lm6fBbQG8TwxnSqHpoqk",
+    password="",
 )
 
 
