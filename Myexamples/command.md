@@ -8,10 +8,10 @@
 
 ```bash
 # 设置您的 GitHub 用户名
-git config --global user.name "SiyuanChenToDo"
+git config --global user.name ""
 
 # 设置您的 GitHub 邮箱地址
-git config --global user.email "2637427015@qq.com"
+git config --global user.email ""
 ```
 
 ---
