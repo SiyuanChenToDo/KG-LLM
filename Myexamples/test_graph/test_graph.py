@@ -24,8 +24,8 @@ from getpass import getpass
 # mistral_api_key = "amPLA3bl3H42UZSZaW9vL1qBEFo8P3KK"
 # os.environ["MISTRAL_API_KEY"] = mistral_api_key
 
-os.environ["OPENAI_COMPATIBILITY_API_KEY"] = "sk-c1a6b588f7d543adb0412c5bc61bdd7b"
-os.environ["OPENAI_COMPATIBILITY_API_BASE_URL"] = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+os.environ["OPENAI_COMPATIBILITY_API_KEY"] = ""
+os.environ["OPENAI_COMPATIBILITY_API_BASE_URL"] = ""
 
 
 os.environ["QWEN_API_KEY"] = os.environ["OPENAI_COMPATIBILITY_API_KEY"]
